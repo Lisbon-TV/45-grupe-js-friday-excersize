@@ -6,7 +6,7 @@ Atspausdinti trumpesnį stringą.
 */
 
 const vardas = "Tom";
-const pavarde = "Cruise";
+let pavarde = "Cruise";
 const pilnasVardas = `${vardas} ${pavarde}`;
 console.log(pilnasVardas)
 
@@ -40,12 +40,27 @@ sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių.
 Jį atspausdinti.
 */
 
+/*
+function trumpinys(vardas, pavarde) {
+    return `${vardas[2]} ${vardas[3]} ${vardas[4]} ${pavarde[4]} ${pavarde[5]} ${pavarde[6]}`;
+}
+const actor = trumpinys('Julia', 'Roberts');
+console.log(actor);
+*/
+
+const actorName = 'Julia';
+const actorSurname = 'Roberts';
+const actorNewName = `${actorName[2]} ${actorName[3]} ${actorName[4]} ${actorSurname[4]} ${actorSurname[5]} ${actorSurname[6]}`;
+console.log(actorNewName);
+
 
 
 /* Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. 
 Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
 Rezultatą atspausdinti.
 */
+
+const storyLine = 'Once upon a time in Holllywood.';
 
 
 
