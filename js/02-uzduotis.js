@@ -61,11 +61,33 @@ Rezultatą atspausdinti.
 */
 
 const storyLine = 'Once upon a time in Holllywood.';
+// String.replace(searchString, replaceString)
+// String.replace(searchString, replceFunction)
 
+/*
+let result = storyLine.replace("o", "*");
+console.log(result);
+*/
+
+// console.log(storyLine.replace(/(O)(o)/g, '$'));
+
+console.log(storyLine.replaceAll('o', '*').replace('O', '*'));
+
+
+/*
+const phrase = 'Once upon a time in Holllywood.';
+const pattern = /o/g;
+const replacement = '*';
+const replaced = phrase.replace(pattern, replacement)
+
+console.log(replaced);
+*/
 
 
 /* Sukurkite keturis kintamuosius,
 kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2. 
 Suskaičiuokite kiek yra nulių, vienetų ir dvejetų.
 */
+
+
 
