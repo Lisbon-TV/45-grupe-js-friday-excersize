@@ -10,6 +10,8 @@ let pavarde = "Cruise";
 const pilnasVardas = `${vardas} ${pavarde}`;
 console.log(pilnasVardas)
 
+//...................
+
 
 /* Sukurkite 4 kintamuosius, 
 kurie saugotų jūsų vardą, pavardę, 
@@ -32,6 +34,8 @@ function intro() {
 //const intro = `Aš esu ${name}. Man yra (${currentYear} - ${birthYear}) metų.`
 console.log(intro());
 
+//.................
+
 
 /* Sukurti du kintamuosius. 
 Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. 
@@ -53,7 +57,7 @@ const actorSurname = 'Roberts';
 const actorNewName = `${actorName[2]} ${actorName[3]} ${actorName[4]} ${actorSurname[4]} ${actorSurname[5]} ${actorSurname[6]}`;
 console.log(actorNewName);
 
-
+//......................
 
 /* Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. 
 Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
@@ -76,12 +80,15 @@ console.log(storyLine.replaceAll('o', '*').replace('O', '*'));
 
 /*
 const phrase = 'Once upon a time in Holllywood.';
-const pattern = /o/g;
+const pattern = /'O', 'i'/g;
 const replacement = '*';
 const replaced = phrase.replace(pattern, replacement)
 
 console.log(replaced);
 */
+
+
+//.....................
 
 
 /* Sukurkite keturis kintamuosius,
@@ -90,4 +97,19 @@ Suskaičiuokite kiek yra nulių, vienetų ir dvejetų.
 */
 
 
+const n1 = 0;
+const n2 = 1;
+const n3 = 2;
+const n4 = 1;
+
+
+let arr = [n1, n2, n3, n4];
+let obj = {};
+
+for (let i = 0; i < arr.length; i++) {
+    obj[arr[i]] = obj[arr[i]] ? obj[arr[i]] + 1 : 1;
+}
+console.log(obj);
+
+// .....................
 
