@@ -19,6 +19,18 @@ ir naudodamas vardo ir pavardės kintamuosius bei
 atspausdintų tokį sakinį :"Aš esu Vardenis Pavardenis. Man yra XX metai(ų)". 
 */
 
+const name = 'Viktoras';
+const surname = 'Tarvydas';
+const birthYear = 1984;
+const currentYear = 2023;
+const age = currentYear - birthYear;
+
+function intro() {
+    return `Aš esu ${name}. Man yra ${age} metų.`
+}
+
+//const intro = `Aš esu ${name}. Man yra (${currentYear} - ${birthYear}) metų.`
+console.log(intro());
 
 
 /* Sukurti du kintamuosius. 
