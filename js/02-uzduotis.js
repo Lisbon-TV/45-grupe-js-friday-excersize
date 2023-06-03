@@ -69,19 +69,19 @@ console.log('...............');
 const storyLine = 'Once upon a time in Holllywood.';
 console.log(storyLine.replaceAll('o', '*').replace('O', '*'));
 
-// OR:
-
-let change = text.replaceAll(/O/gi, (match) => {
-    return match.toUpperCase();
-});
-console.log(change.replaceAll('O', '*'));
-
 // must use global expressions with all replaceAll functions
 // using flag i for case insensitive!
 
 let text = 'Once upon a time in Holllywood.';
 let result = text.replaceAll(/O/gi, '*')
 console.log(result);
+
+// match and replaceAll function with global and i flag:
+
+let change = text.replaceAll(/O/gi, (match) => {
+    return match.toUpperCase();
+});
+console.log(change.replaceAll('O', '*'));
 
 /*
 const phrase = 'Once upon a time in Holllywood.';
