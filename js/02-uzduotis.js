@@ -20,6 +20,7 @@ Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių
 ir naudodamas vardo ir pavardės kintamuosius bei
 atspausdintų tokį sakinį :"Aš esu Vardenis Pavardenis. Man yra XX metai(ų)". 
 */
+console.log();
 
 const name = 'Viktoras';
 const surname = 'Tarvydas';
@@ -51,6 +52,7 @@ function trumpinys(vardas, pavarde) {
 const actor = trumpinys('Julia', 'Roberts');
 console.log(actor);
 */
+console.log();
 
 const actorName = 'Julia';
 const actorSurname = 'Roberts';
@@ -63,7 +65,7 @@ console.log(actorNewName);
 Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
 Rezultatą atspausdinti.
 */
-
+console.log('...............');
 const storyLine = 'Once upon a time in Holllywood.';
 // String.replace(searchString, replaceString)
 // String.replace(searchString, replceFunction)
@@ -95,7 +97,7 @@ console.log(replaced);
 kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2. 
 Suskaičiuokite kiek yra nulių, vienetų ir dvejetų.
 */
-
+console.log('...............');
 
 const n1 = 0;
 const n2 = 1;
@@ -103,6 +105,7 @@ const n3 = 2;
 const n4 = 1;
 
 
+// object:
 let arr = [n1, n2, n3, n4];
 let obj = {};
 
@@ -111,5 +114,22 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(obj);
 
-// .....................
+console.log();
+
+
+// if function:
+const skaiciai = [n1, n2, n3, n4];
+const res = arr.reduce((x, y)=>{
+    if(x[y]){
+        x[y] += 1;
+    }else{
+        x[y] = 1;
+    }
+    return x;
+}, {});
+
+console.log(res);
+
+//.......................
+
 
